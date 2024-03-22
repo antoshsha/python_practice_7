@@ -1,0 +1,3 @@
+Hello world!
+I am Anton and this is my python homework
+I have no time to write anything else in this file

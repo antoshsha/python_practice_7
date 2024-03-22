@@ -2,7 +2,7 @@ def input_text_from_console():
     """
     Inputs the text from console
     """
-    pass
+    return input("write some text: ")
 
 
 def read_from_file_builtin(file_path):
@@ -12,7 +12,8 @@ def read_from_file_builtin(file_path):
     Parameters:
         file_path (str): Path to the file to read from
     """
-    pass
+    with open(file_path, 'r') as file:
+        return file.read()
 
 
 def read_from_file_pandas(file_path):
@@ -22,4 +23,5 @@ def read_from_file_pandas(file_path):
     Parameters:
         file_path (str): Path to the file to read from
     """
-    pass
+    import pandas as pd
+    return pd.read_csv(file_path).to_string(index=False)
